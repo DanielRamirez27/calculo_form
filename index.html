@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartado de Estacionamiento</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header">
+        <img src="img/logo.png" alt="Logo" class="logo">
+        <div class="banner">Apartado de Estacionamiento</div>
+    </div>
+    <div class="container">
+        <h1>Reservar Cupo de Estacionamiento</h1>
+        <form action="#" method="post" id="reservationForm">
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="carModel">Modelo del Vehículo:</label>
+                <input type="text" id="carModel" name="carModel" required>
+            </div>
+            <div class="form-group">
+                <label for="licensePlate">Placa del Vehículo:</label>
+                <input type="text" id="licensePlate" name="licensePlate" required>
+            </div>
+            <div class="form-group">
+                <label for="reservationDate">Fecha de Reserva:</label>
+                <input type="date" id="reservationDate" name="reservationDate" required>
+            </div>
+            <div class="form-group">
+                <label for="timeSlot">Hora de Reserva:</label>
+                <select id="timeSlot" name="timeSlot" required>
+                    <option value="08:00-09:00">06:00 - 08:00</option>
+                    <option value="08:00-09:00">08:00 - 10:00</option>
+                    <option value="09:00-10:00">10:00 - 12:00</option>
+                    <option value="10:00-11:00">12:00 - 14:00</option>
+                    <option value="11:00-12:00">14:00 - 16:00</option>
+                    <option value="12:00-13:00">16:00 - 18:00</option>
+                    <option value="13:00-14:00">18:00 - 20:00</option>
+                    <option value="14:00-15:00">20:00 - 22:00</option>
+                </select>
+            </div>
+            <button type="submit">Reservar Cupo</button>
+        </form>
+    </div>
+</body>
+</html>
